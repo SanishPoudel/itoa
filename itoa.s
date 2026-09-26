@@ -11,7 +11,8 @@ ret
 itoa:
 xor rdx, rdx
 mov rax, rdi
-div 10
+mov rcx, 10
+div rcx
 mov rdi, rax
 call itoa_digit
 mov [rsi], al
